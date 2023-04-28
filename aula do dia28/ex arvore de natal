@@ -1,0 +1,5 @@
+arvore = "*" 
+ramos = int(input("digite a quantidade de ramos."))
+for gol in range(1,ramos):
+    print(arvore) 
+    arvore = arvore + "*"
