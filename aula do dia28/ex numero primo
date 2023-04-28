@@ -1,0 +1,10 @@
+primo = int(input("qual numero deseja saber se é primo? ")) 
+ehPrimo = 0 
+for divisor in range (2,primo+1//2): 
+    if primo % divisor == 0: 
+        ehPrimo += 1
+    
+if ehPrimo == 0: 
+    print("o numero",primo,"é primo!")
+else: 
+    print("o numero",primo,"não é primo!")
