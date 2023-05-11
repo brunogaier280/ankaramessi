@@ -1,0 +1,6 @@
+def hello(n): 
+    print("hello,",n) 
+    
+nome = input("digite o seu nome:") 
+hello(nome)
+    
