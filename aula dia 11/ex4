@@ -1,0 +1,17 @@
+def e_par(n): 
+    if n % 2 == 0: 
+        print(n,"é par") 
+    else: 
+        print(n,"não é impar") 
+        
+        
+def e_positivo(n): 
+    if n >= 0: 
+        print(n,"é positivo") 
+    else: 
+        print(n,"não é positivo") 
+         
+         
+for i in range(5): 
+    e_par(i) 
+    e_positivo(i)
