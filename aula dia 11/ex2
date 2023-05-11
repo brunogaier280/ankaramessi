@@ -1,6 +1,7 @@
-def hello(n): 
-    print("hello,",n) 
+def hello(n,i): 
+    print("hello,",n,"sua idade é:",i) 
     
 nome = input("digite o seu nome:") 
-hello(nome)
+idade = int(input("digite sua idade:")) 
+hello(nome,idade)
     
