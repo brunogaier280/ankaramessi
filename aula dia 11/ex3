@@ -1,0 +1,11 @@
+def e_par(n): 
+    if n % 2 == 0:
+        print(n,"é par") 
+    else: 
+        print(n,"não é par") 
+        
+        
+e_par(3) 
+e_par(4) 
+numero = float(input("digite um numero:")) 
+e_par(numero)
