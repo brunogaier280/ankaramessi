@@ -1,15 +1,15 @@
 def soma(m1,m2): 
-    soma = n1 + n2
-    print("o resultado foi:",soma)
+    soma = m1 + m2
+    print(soma)
 def subtracao(m1,m2):  
-    subtracao = n1 - n2
-    print("o resultado foi:",subtracao) 
+    subtracao = m1 - m2
+    print(subtracao) 
 def multiplicacao(m1,m2): 
-    multiplicacao = n1 * n2 
-    print("o resultado foi:",multiplicacao)
+    multiplicacao = m1 * m2 
+    print(multiplicacao)
 def divisao(m1,m2): 
-    divisao = n1 / n2
-    print("o resultado foi:",divisao) 
+    divisao = m1 / m2
+    print(divisao) 
     
 print("1 - soma") 
 print("2 - subtracao") 
