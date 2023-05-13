@@ -1,0 +1,37 @@
+def menu(): 
+    print("1 - sacar") 
+    print("2 - depositar") 
+    print("4 - sair") 
+    opcao = int(input("opção:")) 
+    return opcao 
+    
+def sacar(saldo): 
+    retirada = float(input("quanto deseja retirar:")) 
+    if saldo >= retirada: 
+        saldo = saldo - retirada 
+        print("seu novo saldo é",saldo) 
+    else: 
+        print("saldo insuficiente!") 
+    return saldo
+
+def depositar(saldo): 
+    deposito = float(input("quanto deseja depositar:")) 
+    saldo += deposito 
+    return saldo
+
+def mostrarSaldo(): 
+    print("seu saldo é de",saldo)
+    
+def main(): 
+    opc = 0 
+    saldo = 1000
+    while opc != 4: 
+        opc = menu() 
+        print("opção digitada:",opc) 
+        if opc == 1: 
+            saldo = sacar(saldo)
+        elif opc == 2: 
+            saldo = depositar(saldo)  
+        elif opc == 3: 
+            saldo = mostrarSaldo(saldo)
+main() 
