@@ -1,0 +1,39 @@
+
+def lerNotas():
+    g1 = float(input("digite a nota da G1: ")) 
+    g2 = float(input("digite a nota da G2: ")) 
+    
+    return g1,g2 
+    
+def mediaOPC1(g1,g2):
+    media = (g1+g2) / 2 
+        
+    return media 
+    
+    
+def mediaOPC2(g1,g2): 
+    media = (g1 * 0.3) + (g2 * 0.7)
+    return media 
+    
+    
+def verificacaoMedias(mediaOpcao1,mediaOpcao2): 
+    if mediaOpcao1 > mediaOpcao2: 
+        mediaFinal = mediaOpcao1 
+        print("nota opcao 1 utilizada") 
+        
+    else: 
+        mediaFinal = mediaOpcao2 
+        print("nota opção 02 utilizada") 
+        
+    if mediaFinal >= 7: 
+        print("aluno aprovado com nota",mediaFinal) 
+    else: 
+        print("aluno reprovado com nota",mediaFinal) 
+        
+def main(): 
+    g1,g2 = lerNotas() 
+    mediaOpcao1 = mediaOPC1(g1,g2) 
+    mediaOpcao2 = mediaOPC2(g1,g2) 
+    verificacaoMedias(mediaOpcao1,mediaOpcao2)
+    
+main()
