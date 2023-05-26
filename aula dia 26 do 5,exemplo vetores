@@ -1,0 +1,42 @@
+
+def menu(): 
+    print("bandinha do samuel!")
+    print("1 - cadastrar cache:") 
+    print("2 - mostrar cache:") 
+    print("3 - media dos caches:") 
+    print("4 - excluir todos os caches:") 
+    print("5 - sair")
+    opc = int(input("digite a opção desejada:")) 
+    return opc
+    
+def cadastrarCache(valores): 
+    cache = float(input("digite o cache:")) 
+    valores.append(cache)
+    return valores 
+    
+def mostrarValores(valores): 
+    print("valores recebidos pelo BANDArista:")
+    print(valores)
+    
+def mediaCaches(valores): 
+    media = 0 
+    for n in valores: 
+        media = media + n 
+    print("media dos caches:",media / len(valores)) 
+    
+def main(): 
+    opc = 0 
+    valores = []
+    
+    while(opc !=5): 
+        opc = menu() 
+        if opc == 1: 
+            valores = cadastrarCache(valores) 
+        elif opc == 2: 
+            mostrarValores(valores)
+        elif opc == 3: 
+            mediaCaches(valores) 
+        elif opc == 4: 
+            valores = [] 
+            
+main()
