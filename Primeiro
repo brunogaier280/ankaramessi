@@ -1,0 +1,9 @@
+def calcular_produto(tupla):
+    produto = 1
+    for elemento in tupla:
+        produto *= elemento
+    return produto
+
+tupla = (4, 3, 2, 2, -1, 18)
+produto = calcular_produto(tupla)
+print(produto)
