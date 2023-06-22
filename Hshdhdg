@@ -1,0 +1,28 @@
+def ordenar_string(string):
+    palavras = []
+    palavra_atual = ""
+
+    for caractere in string:
+        if caractere != '-':
+            palavra_atual += caractere
+        else:
+            palavras.append(palavra_atual)
+            palavra_atual = ""
+
+    palavras.append(palavra_atual)  # Adicionar a última palavra
+
+    palavras_ordenadas = []
+    while palavras:
+        palavra_menor = palavras[0]
+        for palavra in palavras:
+            if palavra < palavra_menor:
+                palavra_menor = palavra
+        palavras_ordenadas.append(palavra_menor)
+        palavras.remove(palavra_menor)
+
+    return '-'.join(palavras_ordenadas)
+
+
+entrada = "vermelho-verde-preto-branco"
+saida = ordenar_string(entrada)
+print(saida)
