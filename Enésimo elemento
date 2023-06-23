@@ -1,0 +1,16 @@
+
+def extrair_elemento(lista, n):
+    elementos = []
+    for tupla in lista:
+        try:
+            elementos.append(tupla[n])
+        except IndexError:
+            print("Erro: A tupla", tupla, "não possui um elemento no índice", n)
+    return elementos
+
+
+lista_tuplas = [("Rodrigo", 14), ("João", 25), ("Maria", 8)]
+indice = 0
+
+elementos = extrair_elemento(lista_tuplas, indice)
+print(elementos)
