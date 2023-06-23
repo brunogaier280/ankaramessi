@@ -1,0 +1,17 @@
+def obter_elementos_unicos(lista):
+  
+    if not isinstance(lista, list):
+        raise TypeError("A entrada deve ser uma lista.")
+    
+    
+    if not all(isinstance(num, (int, float)) for num in lista):
+        raise TypeError("A lista deve conter apenas números.")
+  
+    return list(set(lista))
+
+try:
+    lista_original = [1, 2, 2, 3, 4, 4, 5]
+    elementos_unicos = obter_elementos_unicos(lista_original)
+    print(elementos_unicos)
+except TypeError as e:
+    print("Erro:", str(e))
